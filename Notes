@@ -10,3 +10,16 @@
 // setInterval(()=>{
 //     console.log("I am going to become god");
 // },100)
+
+
+// const Secret = "Super Secret";
+
+
+// sayHi('Susan');
+// sayHi('john');
+// sayHi('peter');
+
+// console.log(names);
+// console.log(sayHi(john))
+// sayHi("susan")
+// const john = require('./4-name');

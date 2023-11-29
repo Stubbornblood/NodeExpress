@@ -5,16 +5,22 @@ readFile('./content/first.txt','utf8',(err,result)=>{
         console.log(err);
         return;
     }
+    // console.log(result);
     const first = result;
-    // console.log(first);
     readFile('./content/second.txt','utf8',(err,result)=>{
+    
         if(err){
             console.log(err);
+            result;
         }
         const second = result;
-        // console.log(result);
-         
+
+        writeFile('./content/result-async.txt',`Here is the result : ${first},${second}`,(err,result)=>{
+            if(err){
+                console.log(err);
+                return;
+            }
+            console.log(result);
+        })
     })
-
-
 })

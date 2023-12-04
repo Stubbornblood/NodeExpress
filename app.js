@@ -4,9 +4,6 @@
 //WEB Apis : setTimeout, DOM api , fetch() , localStorage, console, location <- all part of browser not javascript//GE
 //GEC -> Global execution context
 
-console.log("Start");
-
-setTimeout(function cb(){
-    console.log("CallBack");
-},5000)
-console.log("End");
+setTimeout(()=>{
+console.log("Hello i am learning event loop")
+},1000)

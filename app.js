@@ -8,7 +8,11 @@
 //All function come through promices come and store in microtask queue 
 //Mutation Objser keep cheacking if there is some mutation in dome tree or not
 
-setTimeout(()=>{
-console.log("Hello i am learning event loop")
-},1000) 
 
+console.log('first task');
+
+setTimeout(()=>{
+    console.log("Second Task");
+})
+
+console.log("next task");
